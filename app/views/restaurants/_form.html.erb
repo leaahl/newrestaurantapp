@@ -15,6 +15,11 @@
     <%= form.file_field :picture, id: :restaurant_image_url %>
   </div>
 
+  <div class="field">
+    <%= form.label :rating %>
+    <%= form.text_area :rating, id: :restaurant_rating %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
