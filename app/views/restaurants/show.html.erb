@@ -1,0 +1,10 @@
+<div class="col-md-3">
+    <p><b>Name: </b><%= @restaurant.name %></p>
+    <p><b>Description: </b><%= @restaurant.description %></p>
+    <p><b>Rating: </b><%= @restaurant.rating %><p/>
+    <p>
+      <%= link_to 'Back', restaurants_path %>
+      <%= link_to 'front' %>
+      <%= link_to 'Destroy', @restaurant, method: :delete, data: { confirm: "are you sure?" } %>
+    </p>
+  </div>

@@ -1,0 +1,7 @@
+<h1>Edit Restaurant Review</h1>
+
+<%= render 'form', restaurant: @restaurant %>
+
+<%= link_to 'Show', @restaurant %> |
+<%= link_to 'Back', restaurants_path %>
+<%= link_to 'Destroy', @restaurant, method: :delete, data: { confirm: "are you sure?" } %>
